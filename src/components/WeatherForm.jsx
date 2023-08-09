@@ -8,7 +8,7 @@ const WeatherForm = ({ setWeatherData }) => {
     const getData = async () => {
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/current.json?key=640e68ef9fb14b38ae8194034232907&q=${cityData}`
+          `https://api.weatherapi.com/v1/current.json?key=640e68ef9fb14b38ae8194034232907&q=${cityData}`
         );
         const data = await response.data;
         setWeatherData(data);
