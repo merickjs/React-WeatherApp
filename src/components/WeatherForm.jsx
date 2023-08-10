@@ -23,7 +23,7 @@ const WeatherForm = ({ setWeatherData }) => {
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
-      className="flex justify-center items-center my-6 gap-4"
+      className="flex justify-center items-center my-6 gap-4 z-10"
     >
       <input
         type="text"
